@@ -1,7 +1,7 @@
 {
   "name": "mcm-client",
   "description": "A terminal client to MyCodedMind that allows generating folders and files to initialize projetcs, invoking terminal commands",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Bryan Castro MCM",
   "main": "dist/index.js",
   "type": "module",
