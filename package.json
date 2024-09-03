@@ -1,0 +1,33 @@
+{
+  "name": "@mcm/cli",
+  "description": "A terminal client of MyCodedMind that allows generating folders and files to initialize projetcs, invoking terminal commands",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "bin": {
+    "mcm-terminal-client": "dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/mcm-terminal-client.git"
+  },
+  "scripts": {
+    "start": "npx tsx --watch src/index.ts",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "inquirer": "^10.2.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^22.5.2",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  }
+}
