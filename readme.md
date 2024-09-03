@@ -14,12 +14,12 @@ MCM Terminal Client is a command-line interface (CLI) tool that allows you to ge
 You can install the MCM Terminal Client globally using npm:
 
 ```bash
-npm install -g mcm-terminal-client
+npm install -g mcm-client
 ```
 
 ### Preview
 ```bash
-$ mcm-terminal-client
+$ mcm-client
 
 ? Seleccione una de las siguientes opciones (Use arrow keys)
 ❯ > Base Angular Admin Project
