@@ -4,6 +4,7 @@
   "version": "1.0.3",
   "author": "Bryan Castro MCM",
   "main": "dist/index.js",
+  "type": "module",
   "bin": {
     "mcm-client": "dist/index.js"
   },
