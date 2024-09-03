@@ -21,12 +21,12 @@ npm install -g mcm-terminal-client
 ```bash
 $ mcm-terminal-client
 
-? What would you like to do? (Use arrow keys)
-> Create a new directory
-  Create a new file
-  Run a terminal command
-  Clone a GitHub repository
-  Exit
+? Seleccione una de las siguientes opciones (Use arrow keys)
+❯ > Base Angular Admin Project
+  > Base Ionic/Angular Project
+  > Base Flutter App Project
+  > Run other command
+  X Cancelar
 ```
 
 ## Contributing
