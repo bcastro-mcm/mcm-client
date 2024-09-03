@@ -5,12 +5,12 @@
     "lib": ["ES2020"],                           // Specify library files to be included
     "outDir": "./dist",                          // Redirect output structure to the dist directory
     "rootDir": "./src",                          // Specify the root directory of input files
-    "strict": false,                              // Enable all strict type-checking options
+    "strict": true,                              // Enable all strict type-checking options
     "esModuleInterop": true,                     // Enables emit interoperability between CommonJS and ES Modules
     "skipLibCheck": true,                        // Skip type checking of declaration files
-    "forceConsistentCasingInFileNames": false,    // Disallow inconsistently-cased references to the same file
+    "forceConsistentCasingInFileNames": true,    // Disallow inconsistently-cased references to the same file
     "moduleResolution": "node",                  // Determine how modules are resolved
-    "declaration": false,                         // Generate .d.ts files alongside JavaScript files
+    "declaration": true,                         // Generate .d.ts files alongside JavaScript files
     "sourceMap": false,                            // Generate corresponding .map file
     "allowArbitraryExtensions": true
   },
