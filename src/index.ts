@@ -1,8 +1,8 @@
 import inquirer from "inquirer";
-import { createDirectory, createFile, getFilePath, runCommand } from "./terminal/generator";
-import { OptionTerminal } from "./utils/data-cli";
-import { PromptUser } from "./terminal/prompt-cli";
-import { cloneAndCopyRepo, getUrlGithub } from "./terminal/templates-base";
+import { runCommand } from "./terminal/generator.js";
+import { OptionTerminal } from "./utils/data-cli.js";
+import { PromptUser } from "./terminal/prompt-cli.js";
+import { cloneAndCopyRepo } from "./terminal/templates-base.js";
 
 async function main() {
     let exit = false;

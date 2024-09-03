@@ -1,5 +1,5 @@
 import inquirer from "inquirer";
-import { OptionTerminal } from "../utils/data-cli";
+import { OptionTerminal } from "../utils/data-cli.js";
 
 
 class _PromptUser {
