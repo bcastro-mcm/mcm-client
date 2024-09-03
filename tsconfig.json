@@ -1,19 +1,21 @@
 {
   "compilerOptions": {
-    "target": "ES2020",                          // Specify ECMAScript target version
-    "module": "NodeNext",                          // Use ECMAScript modules
-    "lib": ["ES2020"],                           // Specify library files to be included
-    "outDir": "./dist",                          // Redirect output structure to the dist directory
-    "rootDir": "./src",                          // Specify the root directory of input files
-    "strict": true,                              // Enable all strict type-checking options
-    "esModuleInterop": true,                     // Enables emit interoperability between CommonJS and ES Modules
-    "skipLibCheck": true,                        // Skip type checking of declaration files
-    "forceConsistentCasingInFileNames": true,    // Disallow inconsistently-cased references to the same file
-    "moduleResolution": "NodeNext",                  // Determine how modules are resolved
-    "declaration": false,                         // Generate .d.ts files alongside JavaScript files
-    "sourceMap": false,                            // Generate corresponding .map file
-    "allowArbitraryExtensions": true
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "declaration": true, // creates d.ts type declarations
+    "declarationMap": true, // creates map files for our d.ts files
+    "sourceMap": true, // creates map files for our source code
+    "outDir": "dist", // compile source code into "bin" folder
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true
   },
-  "include": ["src/**/*.ts"],                    // Include all .ts files in the src directory
-  "exclude": ["node_modules", "**/*.spec.ts"]    // Exclude node_modules and test files
+  "include": [
+    "src/index.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
