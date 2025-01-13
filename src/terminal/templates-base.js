@@ -2,9 +2,7 @@ import { execSync } from 'child_process';
 import * as fs from 'fs-extra';
 import * as path from 'path';
 
-export type TYPE_PROJECT = "Angular" | "Flutter" | "Ionic"
-
-export function getUrlGithub(type:TYPE_PROJECT) {
+export function getUrlGithub(type) {
 
     const urls = {
         "Angular": "https://github.com/bcastro-mcm/angular-template-admin-web.git",
@@ -15,7 +13,7 @@ export function getUrlGithub(type:TYPE_PROJECT) {
     return urls[type];
 }
 
-export async function cloneAndCopyRepo(type:TYPE_PROJECT, destinationFolder: string) {
+export async function cloneAndCopyRepo(type, destinationFolder) {
 
     const gitUrl = getUrlGithub(type)
     if( !gitUrl ) {

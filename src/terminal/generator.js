@@ -2,7 +2,7 @@ import { execSync } from 'child_process';
 import * as fs from 'fs';
 import * as path from 'path';
 
-export function createDirectory(dirPath: string) {
+export function createDirectory(dirPath) {
     if (!fs.existsSync(dirPath)) {
         fs.mkdirSync(dirPath, { recursive: true });
         console.log(`Directory created: ${dirPath}`);
@@ -11,12 +11,12 @@ export function createDirectory(dirPath: string) {
     }
 }
 
-export function createFile(filePath: string, content: string = '') {
+export function createFile(filePath, content = '') {
     fs.writeFileSync(filePath, content);
     console.log(`File created: ${filePath}`);
 }
 
-export function runCommand(command: string) {
+export function runCommand(command) {
     try {
         const output = execSync(command, { stdio: 'inherit' });
         console.log(`Command executed: ${command}`);
@@ -25,6 +25,6 @@ export function runCommand(command: string) {
     }
 }
 
-export function getFilePath(fileName: string, dir: string) {
+export function getFilePath(fileName, dir) {
     return path.join(dir, fileName);
 }
