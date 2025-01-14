@@ -1,13 +1,21 @@
 import inquirer from "inquirer";
-import { runCommand } from "./terminal/generator.js";
-import { OptionTerminal } from "./utils/data-cli.js";
-import { PromptUser } from "./terminal/prompt-cli.js";
-import { cloneAndCopyRepo } from "./terminal/templates-base.js";
+import { runCommand } from "./src/terminal/generator.js";
+import { OptionTerminal } from "./src/utils/data-cli.js";
+import { PromptUser } from "./src/terminal/prompt-cli.js";
+import { cloneAndCopyRepo } from "./src/terminal/templates-base.js";
 
 async function main() {
+
     let exit = false;
 
+    console.log("--------------------------------------------");
+    console.log("********************************************");
+    console.log("*********** WELCOME TO MCM CLIENT **********");
+    console.log("********************************************");
+    console.log("--------------------------------------------");
+
     while (!exit) {
+
         const action = await PromptUser.promptUser()
 
         switch (action) {
@@ -19,13 +27,13 @@ async function main() {
 
             case OptionTerminal.flutter:
                 const flutterFolder = await PromptUser.promptFolder()
-                await cloneAndCopyRepo('Flutter',flutterFolder)
+                await cloneAndCopyRepo('Flutter', flutterFolder)
                 exit = true;
                 break;
 
             case OptionTerminal.ionic:
                 const ionicFolder = await PromptUser.promptFolder()
-                await cloneAndCopyRepo('Ionic',ionicFolder)
+                await cloneAndCopyRepo('Ionic', ionicFolder)
                 exit = true;
                 break;
 

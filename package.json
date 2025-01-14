@@ -3,10 +3,10 @@
   "description": "A terminal client to MyCodedMind that allows generating folders and files to initialize projetcs, invoking terminal commands",
   "version": "1.0.8",
   "author": "Bryan Castro MCM",
-  "main": "./dist/index.js",
+  "main": "./index.js",
   "type": "module",
   "bin": {
-    "mcm-client": "./dist/index.js"
+    "mcm-client": "./index.js"
   },
   "homepage": "https://github.com/bcastro-mcm/mcm-client#readme",
   "repository": {
@@ -14,7 +14,8 @@
     "url": "git+https://github.com/bcastro-mcm/mcm-client.git"
   },
   "scripts": {
-    "start": "node --watch src/index.js",
+    "start": "node ./index.js",
+    "dev": "node --watch ./index.js",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
