@@ -14,5 +14,7 @@
         "startTargetName": "start"
       }
     }
-  ]
+  ],
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "nxCloudId": "68c2e673630be60d2e5131cc"
 }
