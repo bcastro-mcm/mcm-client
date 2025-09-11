@@ -16,7 +16,9 @@
   "scripts": {
     "start": "node ./index.js",
     "dev": "node --watch ./index.js",
-    "prepublishOnly": "npm run build"
+    "build": "nx next:build && echo 'Build complete'",
+    "prepublishOnly": "npm run build",
+    "test": "node ./run-tests.js"
   },
   "keywords": [
     "terminal",
